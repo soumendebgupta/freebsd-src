@@ -5927,7 +5927,7 @@ cache_fplookup_trailingslash(struct cache_fpl *fpl)
 	cn_nameptr_slash = cnp->cn_nameptr;
 	while (cnp->cn_nameptr > cnp->cn_pnbuf) {
 		cnp->cn_nameptr--;
-		if (cnp->cn_nameptr[0] == '/') {
+		if (cnp->cn_nameptr[0] == "/") {
 			break;
 		}
 	}
